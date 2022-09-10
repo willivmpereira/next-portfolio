@@ -17,10 +17,7 @@ export const Container = styled.div`
         font-family: ${({ theme }) => theme.text.secondary};
       }
 
-      svg {
-        justify-self: end;
-        cursor: pointer;
-      }
+      
     }
 
     section {
