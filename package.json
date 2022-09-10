@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^12.3.0",
     "gsap": "^3.11.1",
     "next": "10.2.0",
     "next-images": "^1.7.0",
