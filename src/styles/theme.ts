@@ -5,6 +5,10 @@ const theme = {
     ascent: '#dc3545',
     whiteColor: '#F0F0F0',
     darkColor: '#1F1F1F',
+  },
+  text: {
+    primary: "Roboto', sans-serif",
+    secondary: "'Playfair Display', serif",
   }
 };
 
