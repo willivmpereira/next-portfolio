@@ -12,7 +12,7 @@ interface ProjectItemProps {
 export const ProjectItem = ({type, title, description, image, tags}: ProjectItemProps) => {
     return (
         <Content>
-            <div className="text-content">
+            <div className="text-content test">
                 <h5>{type}</h5>
                 <h4 className="portfolio-item-title">{title}</h4>
                 <div className="textbox">
@@ -24,10 +24,8 @@ export const ProjectItem = ({type, title, description, image, tags}: ProjectItem
                     )  )}
                 </div>
             </div>
-            <div className="imgContent">
-                <Link href="/projeto">
+            <div className="imgContent test">
                     <img src={image} alt="" />
-                </Link>
             </div>
         </Content>
     )

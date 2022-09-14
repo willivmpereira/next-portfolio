@@ -12,9 +12,11 @@ export const Content = styled.div`
     margin: 5rem 0;
 
     &:nth-child(even) {
-        .text-content {
-        }
-        .imgContent {
+        .test {
+            &:last-child {
+                background-color: red;
+                order:-1;
+            }
         }
     }
 
