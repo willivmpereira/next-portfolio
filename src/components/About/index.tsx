@@ -1,3 +1,4 @@
+import { ABOUT } from "../../constants/about"
 import { AboutUs } from "./styles"
 
 export const About = () => {
@@ -20,10 +21,8 @@ export const About = () => {
                         </div>
                     </div>
                     <div className="about__description">
-                        <p>Estamos agora na era da audiência - onde as pessoas que estamos tentando alcançar estão no comando. Sabemos que o público está menos tolerante à publicidade do que nunca. A publicidade hoje é recebida nos termos de um público, não de uma marca. E eles vão dispensar o indesejável instantaneamente.</p>
-                        <br/>
-                        
-                        <p>Nós da co.Blvck somos movidos por tecnologia e dados tanto quanto por design e conteúdo para garantir que cumpramos nossa principal missão de ajudar nossos clientes a alcançar seu sucesso. Nossas soluções digitais usam dados para segmentar consumidores por demografia ou interesses, a fim de encontrar o Santo Graal que é a pessoa certa no dispositivo certo no momento certo. Com a segmentação de público, é mais provável que você alcance consumidores interessados em seus produtos ou serviços com mensagens relevantes. também diminui os gastos com anúncios que você dominará em olhos desinteressados e ajuda a mover clientes em potencial pelo túnel. Nós nunca permitimos que você 'deixe dinheiro na mesa', por assim dizer.</p>
+                        <p dangerouslySetInnerHTML={{ __html: ABOUT.description }}>
+                        </p>
                     </div>
                 </div>
             </div>

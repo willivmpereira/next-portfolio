@@ -69,6 +69,7 @@ export const ContactContent = styled.section`
             outline: none;
             padding: 0.75rem;
             background-color: ${({ theme }) => theme.colors.whiteColor};
+            resize: none;
 
             &:focus {
               border: solid 2px ${({ theme }) => theme.colors.darkColor};
@@ -87,6 +88,7 @@ export const ContactContent = styled.section`
           border: solid 2px ${({ theme }) => theme.colors.darkColor};
           transition: all 0.75s ease-out;
           font-weight: 600;
+          box-shadow: 0 2px 3px rgba(0,0,0,0.13);
 
           &:hover {
             background-color: transparent;

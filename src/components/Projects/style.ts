@@ -72,3 +72,20 @@ export const Content = styled.div`
       }
     }
 `;
+
+export const Teste = styled.div`
+
+  #teste {
+    display: flex;
+    width: 500vw;
+  }
+
+  #oi {
+    width: 100vw;
+    height: 100vh;
+
+    img {
+      max-width: 750px;
+    }
+  }
+`
