@@ -6,45 +6,48 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import { useEffect } from 'react';
 
-
 export const Projects = () => {
-
-  gsap.registerPlugin(ScrollTrigger)
+  gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
     const components = document.querySelectorAll('#oi');
     const container: HTMLElement = document.querySelector('#teste');
-  
+
     gsap.to(components, {
       xPercent: -100 * (components.length - 1),
-      ease: "none",
+      ease: 'none',
       scrollTrigger: {
         trigger: container,
         pin: true,
         scrub: 1,
         snap: 1 / (components.length - 1),
-        end: () => "+=" + container.offsetWidth
+        end: () => '+=' + container.offsetWidth
       }
-    })
-  }, [] )
-  
+    });
+  }, []);
+
   return (
     <>
-    <ProjectsContent>
-      <div className="container">
-        {PROJECTS.map(item => (
-          <ProjectItem
-            type={item.type}
-            title={item.title}
-            description={item.description}
-            image={item.image}
-            tags={item.tags}
-          />
-        ))}
-      </div>
-    </ProjectsContent>
+      <ProjectsContent>
+          <div id="teste">
+              {PROJECTS.map(item => (
+                <div id="oi" >
+                  <div className="container">
+                  <ProjectItem
+                  type={item.type}
+                  title={item.title}
+                  description={item.description}
+                  image={item.image}
+                  tags={item.tags}
+                  slug={item.type}
+                />
+                  </div>
+                </div>
+              ))}
+          </div>
+      </ProjectsContent>
 
-    <Teste>
+      {/* <Teste>
       <div id='teste'>
         <div id="oi" className='one'>
           <img src="https://img.freepik.com/vetores-gratis/pagina-inicial-do-web-design-dos-desenhos-animados_52683-70880.jpg?w=2000" alt="" />
@@ -56,9 +59,7 @@ export const Projects = () => {
           <img src="https://img.freepik.com/vetores-gratis/pagina-inicial-do-web-design-dos-desenhos-animados_52683-70880.jpg?w=2000" alt="" />
         </div>
       </div>
-    </Teste>
-    
-    
+    </Teste> */}
     </>
   );
 };

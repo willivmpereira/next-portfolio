@@ -1,6 +1,24 @@
 import styled from 'styled-components';
+import Link from 'next/link'
 
-export const ProjectsContent = styled.div``;
+export const ProjectsContent = styled.div`
+#teste {
+    display: flex;
+    width: 500vw;
+  }
+
+  #oi {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+    }
+  }
+`;
 
 export const Content = styled.div`
   
@@ -71,21 +89,41 @@ export const Content = styled.div`
         }
       }
     }
+
+    a {
+      margin-top: 3rem;
+      position: relative;
+      background: transparent;
+      border: none;
+      font-size: 1rem;
+      color: ${({ theme }) => theme.colors.ascent};
+      font-weight: 500;
+      margin-left: .625rem;
+      
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 1px;
+        bottom: -7px;
+        left: 0;
+        background: linear-gradient(270deg, ${({theme }) => theme.colors.ascent} 50%, ${({ theme }) => theme.colors.whiteColor} 100%);
+        transform-origin: bottom right;
+        transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+      }
+      
+      &:hover {
+        &::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+          background: linear-gradient(270deg, ${({theme }) => theme.colors.ascent} 50%, ${({ theme }) => theme.colors.whiteColor} 100%);
+        }
+      }
+    }
 `;
 
 export const Teste = styled.div`
 
-  #teste {
-    display: flex;
-    width: 500vw;
-  }
 
-  #oi {
-    width: 100vw;
-    height: 100vh;
-
-    img {
-      max-width: 750px;
-    }
-  }
 `

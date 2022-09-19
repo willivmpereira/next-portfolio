@@ -9,15 +9,8 @@ export const About = () => {
                     <div className="about__title">
                         <h4>Let's Connect</h4>
                         <h1>Conectando<br/>você ao<br/>seu público</h1>
-                        <div className="status">
-                            <div className="projects">
-                                <h4>105+</h4>
-                                <span>Projetos</span>
-                            </div>
-                            <div className="clients">
-                                <h4>13+</h4>
-                                <span>Clientes</span>
-                            </div>
+                        <div className="photo__me">
+                            <img src="https://preview.redd.it/2zp0fvem63y51.jpg?auto=webp&s=e4efdea2dd10be127a97a97f4f5691d776ce724a" alt="" />
                         </div>
                     </div>
                     <div className="about__description">

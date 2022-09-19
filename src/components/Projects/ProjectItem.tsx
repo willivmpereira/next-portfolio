@@ -6,10 +6,11 @@ interface ProjectItemProps {
     title: string,
     description: string,
     image: string,
-    tags: string[]
+    tags: string[],
+    slug: string
 }
 
-export const ProjectItem = ({type, title, description, image, tags}: ProjectItemProps) => {
+export const ProjectItem = ({type, title, description, image, tags, slug}: ProjectItemProps) => {
     return (
         <Content>
             <div className="text-content test">
@@ -23,9 +24,12 @@ export const ProjectItem = ({type, title, description, image, tags}: ProjectItem
                         <span>{tag}</span>
                     )  )}
                 </div>
+                <Link href={`/${slug}`}>
+                    <a>Visualizar projeto</a>
+                </Link>
             </div>
             <div className="imgContent test">
-                    <img src={image} alt="" />
+                <img src={image} alt="" />
             </div>
         </Content>
     )

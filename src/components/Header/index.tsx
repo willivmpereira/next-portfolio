@@ -41,7 +41,7 @@ export function Header() {
             <h1 className="headline">William</h1>
           </div>
         </section>
-        <a className="go-down" ref={el => godown = el}></a>
+        <button className="go-down" ref={el => godown = el}></button>
       </header>
       <div className="slider" ref={el => slide = el}></div>
     </Container>

@@ -3,12 +3,15 @@ import { lighten } from 'polished';
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
+  html {
+    overflow-x: hidden;
+  }
+
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
 
     ::-webkit-scrollbar {
       width: 8px;

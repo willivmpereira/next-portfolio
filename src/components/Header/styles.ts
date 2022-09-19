@@ -16,8 +16,6 @@ export const Container = styled.div`
         font-size: 24px;
         font-family: ${({ theme }) => theme.text.secondary};
       }
-
-      
     }
 
     section {
@@ -72,6 +70,9 @@ export const Container = styled.div`
       margin-left: 5rem;
       position: absolute;
       margin-top: -5rem;
+      transition: .3s ease;
+      background-color: transparent;
+      border: none;
 
       &::before {
         width: 2px;
