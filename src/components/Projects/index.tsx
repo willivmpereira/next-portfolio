@@ -6,7 +6,22 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import { useEffect } from 'react';
 
-export const Projects = () => {
+interface IProjects {
+  slug: string;
+  title: string;
+  description: string;
+  image:string;
+  type: string;
+  tags: string;
+}
+
+interface ProjectsProps {
+  projects: IProjects[];
+}
+
+export const Projects = ({ projects }: ProjectsProps) => {
+  console.log(projects)
+
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
@@ -30,7 +45,7 @@ export const Projects = () => {
     <>
       <ProjectsContent>
           <div id="teste">
-              {PROJECTS.map(item => (
+              {projects.map(item => (
                 <div id="oi" >
                   <div className="container">
                   <ProjectItem

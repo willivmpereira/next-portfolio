@@ -6,7 +6,7 @@ interface ProjectItemProps {
     title: string,
     description: string,
     image: string,
-    tags: string[],
+    tags: string,
     slug: string
 }
 
@@ -20,9 +20,9 @@ export const ProjectItem = ({type, title, description, image, tags, slug}: Proje
                     <p>{description}</p>
                 </div>
                 <div className="tecnologias">
-                    {tags.map(tag => (
-                        <span>{tag}</span>
-                    )  )}
+                    
+                        <span>{tags}</span>
+ 
                 </div>
                 <Link href={`/${slug}`}>
                     <a>Visualizar projeto</a>
