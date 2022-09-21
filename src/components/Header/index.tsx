@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import Image from 'next/image';
-import { Container } from './styles';
+import { Container, MenuContainer } from './styles';
 import gsap, { Power2, TimelineLite } from "gsap";
 
 export function Header() {
@@ -10,6 +10,7 @@ export function Header() {
   let logo: any = useRef(null);
   let menu: any = useRef(null);
   let godown: any = useRef(null);
+  let menuGG: any = useRef(null);
 
 
   useEffect(() => {
@@ -20,8 +21,25 @@ export function Header() {
       .fromTo(hero, 1.2, {width: "100%"}, {width: "80%", ease: Power2.easeInOut}, "-=0.3")
       .fromTo(slide, 1.2, {x: "-100%"}, {x: "0%", ease: Power2.easeInOut}, "-=1.2")
       .fromTo(logo, 0.5, {opacity: 0, x: 30}, {opacity: 1, x: 0}, "-=0.5")
-      //.fromTo(menu, 0.5, {opacity: 0, x: 30}, {opacity: 1, x: 0}, "-=0.5")
+      .fromTo(menu, 0.5, {opacity: 0, x: 30}, {opacity: 1, x: 0}, "-=0.5")
       .fromTo(godown, 0.5, {opacity: 0, y: 30}, {opacity: 1, y: 0}, "-=0.9");
+
+      const hamburger = document.querySelector('.hamburger');
+      const exit = document.querySelector('.exit');
+
+      let t1 = gsap.timeline({paused: true});
+
+      t1.to(menuGG, 1, {opacity: 1, duration: 1, top: 0, ease: Power2.easeInOut})
+      t1.to(".nav", 1, {opacity: 1, duration: 0.6, stagger: 0.3, marginTop: 0, ease: Power2.easeInOut})
+
+      hamburger.addEventListener('click', () => {
+        t1.play().timeScale(1)
+      })
+
+      exit.addEventListener('click', () => {
+        t1.play().timeScale(3)
+        t1.reverse()
+      })
     
   })
 
@@ -30,7 +48,37 @@ export function Header() {
       <header>
         <nav>
           <h3 ref={el => logo = el}>William</h3>
+          <img ref={el => menu = el} className='hamburger' src="https://cdn-icons-png.flaticon.com/512/3388/3388823.png" width="24" height="24" alt="" />
+
         </nav>
+        <MenuContainer ref={el => menuGG = el}>
+            <div className="background">Menu</div>
+            <div className="exit">
+                <p>sair</p>
+            </div>
+            <div className="menu-container">
+                <ul className="nav-list">
+                    <li className="nav">
+                        <a href="#" className="nav-link">
+                            Home 
+                            <span className="numbers">01</span>
+                        </a>
+                    </li>
+                    <li className="nav">
+                        <a href="#" className="nav-link">
+                            Projects 
+                            <span className="numbers">02</span>
+                        </a>
+                    </li>
+                    <li className="nav">
+                        <a href="#" className="nav-link">
+                            Contact 
+                            <span className="numbers">03</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </MenuContainer>
         <section>
           <div className="hero" ref={el => hero = el}>
             <Image

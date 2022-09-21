@@ -20,8 +20,6 @@ interface ProjectsProps {
 }
 
 export const Projects = ({ projects }: ProjectsProps) => {
-  console.log(projects)
-
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
@@ -49,6 +47,7 @@ export const Projects = ({ projects }: ProjectsProps) => {
                 <div id="oi" >
                   <div className="container">
                   <ProjectItem
+                  key={item.slug}
                   type={item.type}
                   title={item.title}
                   description={item.description}

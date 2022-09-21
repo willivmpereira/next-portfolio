@@ -5,9 +5,14 @@ export const Contact = () => {
   return (
     <ContactContent>
       <div className="container">
-        <div className="content">
-          <h2>Adoraria ouvir de você, entre em contato <span>👋</span></h2>
-          <Form/>
+        <div className="display">
+          <div className="line">
+            <div className="liner"></div>
+          </div>
+          <div className="content">
+            <h2>Adoraria ouvir de você, entre em contato <span>👋</span></h2>
+            <Form/>
+          </div>
         </div>
       </div>
     </ContactContent>

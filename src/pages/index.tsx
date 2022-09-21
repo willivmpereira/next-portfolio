@@ -6,6 +6,7 @@ import { Contact } from '../components/Contact';
 import { GetStaticProps } from 'next';
 import { getPrismicClient } from '../services/primic';
 import Prismic from '@prismicio/client'
+import { MyServices } from '../components/MyServices';
 
 interface IProjects {
   slug: string;
@@ -25,6 +26,7 @@ export default function Home({ projects }: HomeProjects) {
     <HomeContainer>
       <Header/>
       <About/>
+      <MyServices/>
       <Projects projects={projects}/>
       <Contact/>
     </HomeContainer>
@@ -44,7 +46,7 @@ export const getStaticProps: GetStaticProps = async () => {
     title: project.data.title,
     description: project.data.description,
     image: project.data.image.url,
-    type: project.type,
+    type: project.data.type,
     tags: project.data.tags
   }))
 

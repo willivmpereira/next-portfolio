@@ -91,6 +91,7 @@ export const Content = styled.div`
     }
 
     a {
+      display: inline-block;
       margin-top: 3rem;
       position: relative;
       background: transparent;
@@ -118,6 +119,7 @@ export const Content = styled.div`
           transform: scaleX(1);
           transform-origin: bottom left;
           background: linear-gradient(270deg, ${({theme }) => theme.colors.ascent} 50%, ${({ theme }) => theme.colors.whiteColor} 100%);
+          transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
         }
       }
     }

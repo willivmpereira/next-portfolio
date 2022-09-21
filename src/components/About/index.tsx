@@ -10,7 +10,7 @@ export const About = () => {
                         <h4>Let's Connect</h4>
                         <h1>Conectando<br/>você ao<br/>seu público</h1>
                         <div className="photo__me">
-                            <img src="https://preview.redd.it/2zp0fvem63y51.jpg?auto=webp&s=e4efdea2dd10be127a97a97f4f5691d776ce724a" alt="" />
+                            <img src="https://i.imgur.com/HdW5ULT.jpeg" alt="" />
                         </div>
                     </div>
                     <div className="about__description">
