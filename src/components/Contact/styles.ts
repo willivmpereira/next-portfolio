@@ -33,6 +33,7 @@ export const ContactContent = styled.section`
       h2 {
         font-size: 3rem;
         max-width: 35rem;
+        font-weight: 400;
 
         span {
           animation: wave-animation 2.5s infinite;

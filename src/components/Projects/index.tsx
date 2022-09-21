@@ -12,7 +12,7 @@ interface IProjects {
   description: string;
   image:string;
   type: string;
-  tags: string;
+  tags: string[];
 }
 
 interface ProjectsProps {
@@ -44,10 +44,9 @@ export const Projects = ({ projects }: ProjectsProps) => {
       <ProjectsContent>
           <div id="teste">
               {projects.map(item => (
-                <div id="oi" >
+                <div id="oi" key={item.slug}>
                   <div className="container">
                   <ProjectItem
-                  key={item.slug}
                   type={item.type}
                   title={item.title}
                   description={item.description}

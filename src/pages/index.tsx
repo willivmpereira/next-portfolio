@@ -14,7 +14,7 @@ interface IProjects {
   description: string;
   image:string;
   type: string;
-  tags: string;
+  tags: string[];
 }
 
 interface HomeProjects {
@@ -47,7 +47,7 @@ export const getStaticProps: GetStaticProps = async () => {
     description: project.data.description,
     image: project.data.image.url,
     type: project.data.type,
-    tags: project.data.tags
+    tags: project.tags,
   }))
 
   return {

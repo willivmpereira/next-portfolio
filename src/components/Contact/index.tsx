@@ -10,7 +10,7 @@ export const Contact = () => {
             <div className="liner"></div>
           </div>
           <div className="content">
-            <h2>Adoraria ouvir de você, entre em contato <span>👋</span></h2>
+            <h2>Love to hear from you Get in touch <span>👋</span></h2>
             <Form/>
           </div>
         </div>
