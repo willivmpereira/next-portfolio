@@ -1,20 +1,23 @@
-import { HomeContainer } from '../styles/HomeStyles'
-import { Header } from "../components/Header";
+import { HomeContainer } from '../styles/HomeStyles';
+import { Header } from '../components/Header';
 import { About } from '../components/About';
 import { Projects } from '../components/Projects';
 import { Contact } from '../components/Contact';
 import { GetStaticProps } from 'next';
 import { getPrismicClient } from '../services/primic';
-import Prismic from '@prismicio/client'
+import Prismic from '@prismicio/client';
 import { MyServices } from '../components/MyServices';
+import { gql, useQuery } from '@apollo/client';
+import { client } from '../lib/apollo';
 
 interface IProjects {
   slug: string;
   title: string;
-  description: string;
-  image:string;
-  type: string;
+  description: string[];
+  id: string;
+  image: string[];
   tags: string[];
+  typeprojects: string;
 }
 
 interface HomeProjects {
@@ -24,36 +27,45 @@ interface HomeProjects {
 export default function Home({ projects }: HomeProjects) {
   return (
     <HomeContainer>
-      <Header/>
-      <About/>
-      <MyServices/>
-      <Projects projects={projects}/>
-      <Contact/>
+      <Header />
+      <About />
+      <MyServices />
+      <Projects projects={projects.projects} />
+      <Contact />
     </HomeContainer>
   );
 }
 
+const GET_PROJECTS = gql`
+query Projects {
+  projects {
+    slug
+    title
+    description {
+      text
+    }
+    id
+    image {
+      url
+    }
+    tags {
+      tag
+    }
+  	typeprojects
+  }
+}
+  `;
+
 export const getStaticProps: GetStaticProps = async () => {
-  const prismic = getPrismicClient();
 
-  const projectsResponse = await prismic.query(
-    [Prismic.Predicates.at('document.type', 'project')],
-    { orderings: '[document.frist_publication_date desc]'}
-  );
-
-  const projects = projectsResponse.results.map(project => ({
-    slug: project.uid,
-    title: project.data.title,
-    description: project.data.description,
-    image: project.data.image.url,
-    type: project.data.type,
-    tags: project.tags,
-  }))
+    const { data } = await client.query({
+      query: GET_PROJECTS
+    })
 
   return {
     props: {
-      projects
+      projects: data
     },
     revalidate: 86400
-  }
-} 
+  };
+};

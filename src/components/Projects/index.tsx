@@ -9,10 +9,11 @@ import { useEffect } from 'react';
 interface IProjects {
   slug: string;
   title: string;
-  description: string;
-  image:string;
-  type: string;
+  description: string[];
+  id: string;
+  image: string[];
   tags: string[];
+  type: string;
 }
 
 interface ProjectsProps {
@@ -20,6 +21,9 @@ interface ProjectsProps {
 }
 
 export const Projects = ({ projects }: ProjectsProps) => {
+
+  console.log(projects)
+
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
@@ -44,7 +48,7 @@ export const Projects = ({ projects }: ProjectsProps) => {
       <ProjectsContent>
           <div id="teste">
               {projects.map(item => (
-                <div id="oi" key={item.slug}>
+                <div id="oi" >
                   <div className="container">
                   <ProjectItem
                   type={item.type}
@@ -52,27 +56,14 @@ export const Projects = ({ projects }: ProjectsProps) => {
                   description={item.description}
                   image={item.image}
                   tags={item.tags}
-                  slug={item.type}
+                  slug={item.slug}
+                  id={item.id}
                 />
                   </div>
                 </div>
               ))}
           </div>
       </ProjectsContent>
-
-      {/* <Teste>
-      <div id='teste'>
-        <div id="oi" className='one'>
-          <img src="https://img.freepik.com/vetores-gratis/pagina-inicial-do-web-design-dos-desenhos-animados_52683-70880.jpg?w=2000" alt="" />
-        </div>
-        <div id="oi" className='two'>
-          <img src="https://img.freepik.com/vetores-gratis/pagina-inicial-do-web-design-dos-desenhos-animados_52683-70880.jpg?w=2000" alt="" />
-        </div>
-        <div id="oi" className='three'>
-          <img src="https://img.freepik.com/vetores-gratis/pagina-inicial-do-web-design-dos-desenhos-animados_52683-70880.jpg?w=2000" alt="" />
-        </div>
-      </div>
-    </Teste> */}
     </>
   );
 };

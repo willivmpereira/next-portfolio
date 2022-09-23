@@ -8,8 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "@apollo/client": "^3.6.9",
     "@next/bundle-analyzer": "^12.3.0",
     "@prismicio/client": "5.1.0",
+    "graphql": "^16.6.0",
     "gsap": "^3.11.1",
     "next": "10.2.0",
     "next-images": "^1.7.0",

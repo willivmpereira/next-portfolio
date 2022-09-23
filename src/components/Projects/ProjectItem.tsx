@@ -1,27 +1,28 @@
 import Link from "next/link"
 import { Content } from "./style"
 
-interface ProjectItemProps {
-    type: string,
-    title: string,
-    description: string,
-    image: string,
-    tags: string[],
-    slug: string
-}
+// interface ProjectItemProps {
+//   slug: string;
+//   title: string;
+//   description: string;
+//   id: string;
+//   image: string[];
+//   tags: string[];
+//   type: string;
+// }
 
-export const ProjectItem = ({type, title, description, image, tags, slug}: ProjectItemProps) => {
+export const ProjectItem = ({type, title, description, image, slug, tags}: any) => {
     return (
         <Content>
             <div className="text-content test">
                 <h5>{title}</h5>
                 <h4 className="portfolio-item-title">{type}</h4>
                 <div className="textbox">
-                    <p>{description}</p>
+                    <p>{description.text}</p>
                 </div>
                 <div className="tecnologias">
                     {
-                        tags.map(itemTag => (
+                        tags[0].tag.map(itemTag => (
                             
                             <span>{itemTag}</span>
                         ))
@@ -32,7 +33,7 @@ export const ProjectItem = ({type, title, description, image, tags, slug}: Proje
                 </Link>
             </div>
             <div className="imgContent test">
-                <img src={image} alt="" />
+                <img src={image.url} alt="" />
             </div>
         </Content>
     )
