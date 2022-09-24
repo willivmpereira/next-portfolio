@@ -20,7 +20,7 @@ export const GET_PROJECTS = gql`
   }
 `;
 
-export const getProject = (slug: string | string[]) => {
+export const getProjectBySlug = (slug: string | string[]) => {
   return gql`
   query Projects {
     projects(where: {slug: "${slug}"}) {
@@ -40,4 +40,4 @@ export const getProject = (slug: string | string[]) => {
     }
   }
   `;
-}
+};
