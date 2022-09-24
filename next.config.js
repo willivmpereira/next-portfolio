@@ -8,4 +8,7 @@ module.exports = {
   images: {
     domains: ['wnka.co'],
   },
+  build : { 
+    transpile : [ 'gsap' ] 
+  }  
 }

@@ -4,11 +4,10 @@ import { About } from '../components/About';
 import { Projects } from '../components/Projects';
 import { Contact } from '../components/Contact';
 import { GetStaticProps } from 'next';
-import { getPrismicClient } from '../services/primic';
-import Prismic from '@prismicio/client';
 import { MyServices } from '../components/MyServices';
 import { gql, useQuery } from '@apollo/client';
 import { client } from '../lib/apollo';
+import { Gallery } from '../components/Gallery';
 
 interface IProjects {
   slug: string;
@@ -21,14 +20,16 @@ interface IProjects {
 }
 
 interface HomeProjects {
-  projects: IProjects[];
+  projectss: IProjects[];
+  projects: any
 }
 
 export default function Home({ projects }: HomeProjects) {
   return (
-    <HomeContainer>
+    <HomeContainer className='main-container' id='main-container'>
       <Header />
       <About />
+      {/* <Gallery/> */}
       <MyServices />
       <Projects projects={projects.projects} />
       <Contact />

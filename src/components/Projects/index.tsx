@@ -22,8 +22,6 @@ interface ProjectsProps {
 
 export const Projects = ({ projects }: ProjectsProps) => {
 
-  console.log(projects)
-
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {

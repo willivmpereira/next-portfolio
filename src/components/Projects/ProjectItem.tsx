@@ -28,7 +28,7 @@ export const ProjectItem = ({type, title, description, image, slug, tags}: any) 
                         ))
                     }
                 </div>
-                <Link href={`/${slug}`}>
+                <Link href={`/projects/${slug}`}>
                     <a>Visualizar projeto</a>
                 </Link>
             </div>

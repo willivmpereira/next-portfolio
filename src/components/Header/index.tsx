@@ -28,7 +28,6 @@ export function Header() {
       const exit = document.querySelector('.exit');
 
       let t1 = gsap.timeline({paused: true});
-
       t1.to(menuGG, 1, {opacity: 1, duration: 1, top: 0, ease: Power2.easeInOut})
       t1.to(".nav", 1, {opacity: 1, duration: 0.6, stagger: 0.3, marginTop: 0, ease: Power2.easeInOut})
 

@@ -10,9 +10,10 @@
   "dependencies": {
     "@apollo/client": "^3.6.9",
     "@next/bundle-analyzer": "^12.3.0",
-    "@prismicio/client": "5.1.0",
+    "classnames": "2.2.6",
     "graphql": "^16.6.0",
-    "gsap": "^3.11.1",
+    "gsap": "3.11.1",
+    "locomotive-scroll": "4.0.6",
     "next": "10.2.0",
     "next-images": "^1.7.0",
     "polished": "^4.2.2",
