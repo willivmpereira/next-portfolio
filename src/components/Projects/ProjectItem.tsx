@@ -24,7 +24,7 @@ export const ProjectItem = ({type, title, description, image, slug, tags}: any) 
                     {
                         tags[0].tag.map(itemTag => (
                             
-                            <span>{itemTag}</span>
+                            <span key={itemTag} >{itemTag}</span>
                         ))
                     }
                 </div>

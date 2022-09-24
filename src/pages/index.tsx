@@ -8,6 +8,7 @@ import { MyServices } from '../components/MyServices';
 import { gql, useQuery } from '@apollo/client';
 import { client } from '../lib/apollo';
 import { Gallery } from '../components/Gallery';
+import { GET_PROJECTS } from '../constants/querys';
 
 interface IProjects {
   slug: string;
@@ -18,7 +19,6 @@ interface IProjects {
   tags: string[];
   typeprojects: string;
 }
-
 interface HomeProjects {
   projectss: IProjects[];
   projects: any
@@ -37,25 +37,7 @@ export default function Home({ projects }: HomeProjects) {
   );
 }
 
-const GET_PROJECTS = gql`
-query Projects {
-  projects {
-    slug
-    title
-    description {
-      text
-    }
-    id
-    image {
-      url
-    }
-    tags {
-      tag
-    }
-  	typeprojects
-  }
-}
-  `;
+
 
 export const getStaticProps: GetStaticProps = async () => {
 

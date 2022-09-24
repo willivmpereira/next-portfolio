@@ -46,7 +46,7 @@ export const Projects = ({ projects }: ProjectsProps) => {
       <ProjectsContent>
           <div id="teste">
               {projects.map(item => (
-                <div id="oi" >
+                <div id="oi" key={item.id} >
                   <div className="container">
                   <ProjectItem
                   type={item.type}
