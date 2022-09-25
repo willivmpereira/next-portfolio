@@ -22,16 +22,16 @@ interface HomeProjects {
   project: IProject;
 }
 
-export const ProjectSlug = ({ project }: HomeProjects) => {
+export default function ProjectSlug({ project }: HomeProjects) {
   return (
-    <ProjectContainer>
+    <section>
       <BannerProject
         title={project.title}
         type={project.typeprojects}
         imgUrl={project.image.url}
         description={project.description.text}
       />
-    </ProjectContainer>
+    </section>
   );
 }
 
