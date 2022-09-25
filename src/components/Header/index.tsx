@@ -2,6 +2,9 @@ import React, { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { Container, MenuContainer } from './styles';
 import gsap, { Power2, TimelineLite } from "gsap";
+import { IconContext } from "react-icons";
+import { CgMenuMotion, CgClose } from 'react-icons/cg';
+
 
 export function Header() {
 
@@ -47,13 +50,19 @@ export function Header() {
       <header>
         <nav>
           <h3 ref={el => logo = el}>William</h3>
-          <img ref={el => menu = el} className='hamburger' src="https://cdn-icons-png.flaticon.com/512/3388/3388823.png" width="24" height="24" alt="" />
+          <div ref={el => menu = el} className='hamburger'>
+            <IconContext.Provider value={{ color: "#000", size: "1.5rem" }}>
+            <CgMenuMotion/>
+            </IconContext.Provider>
+          </div>
 
         </nav>
         <MenuContainer ref={el => menuGG = el}>
             <div className="background">Menu</div>
             <div className="exit">
-                <p>sair</p>
+            <IconContext.Provider value={{ color: "#FFF", size: "1.5rem" }}>
+              <CgClose/>
+            </IconContext.Provider>
             </div>
             <div className="menu-container">
                 <ul className="nav-list">
@@ -82,7 +91,7 @@ export function Header() {
           <div className="hero" ref={el => hero = el}>
             <Image
               src="https://wnka.co/wp-content/uploads/2018/01/travis-scott-astroworld-2019-cr-Julian-Bajsel-billboard-1548-compressed.jpg"
-              alt="Banner"
+              alt="Banner AstroWorld"
               layout="fill"
             />
             <h1 className="headline">William</h1>

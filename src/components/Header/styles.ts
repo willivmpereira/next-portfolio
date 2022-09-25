@@ -21,8 +21,8 @@ export const Container = styled.div`
         justify-self: end;
         max-width: 24px;
         z-index: 999;
+        cursor: pointer;
       }
-
     }
 
     section {
@@ -77,7 +77,7 @@ export const Container = styled.div`
       margin-left: 5rem;
       position: absolute;
       margin-top: -5rem;
-      transition: .3s ease;
+      transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
       background-color: transparent;
       border: none;
 
@@ -90,14 +90,11 @@ export const Container = styled.div`
         position: absolute;
         background: ${({ theme }) => theme.colors.ascent};
         left: 50%;
-        -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         pointer-events: none;
         top: 0;
-        -webkit-transition: 0.3s all ease;
-        -o-transition: 0.3s all ease;
-        transition: 0.3s all ease;
+        transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+
       }
 
       &::after {
@@ -155,10 +152,10 @@ export const MenuContainer = styled.div`
     position: absolute;
     font-size: 14rem;
     font-weight: 400;
-    color: rgba(255,255,255,0.1);
+    color: rgba(255, 255, 255, 0.1);
     z-index: -1;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 768px) {
       font-size: 8rem;
     }
   }
@@ -167,6 +164,7 @@ export const MenuContainer = styled.div`
     position: absolute;
     top: 40px;
     right: 40px;
+    cursor: pointer;
   }
 
   .menu-container {
@@ -177,10 +175,11 @@ export const MenuContainer = styled.div`
         opacity: 0;
 
         .nav-link {
-          color: #FFF;
+          color: #fff;
           font-size: 4rem;
           transition: 0.2s ease-in-out;
           text-align: left;
+          transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
 
           &:hover {
             color: ${({ theme }) => theme.colors.ascent};
@@ -193,5 +192,4 @@ export const MenuContainer = styled.div`
       }
     }
   }
-
-`
+`;

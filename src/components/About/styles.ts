@@ -29,6 +29,15 @@ export const AboutUs = styled.div`
         margin-bottom: 2rem;
         img {
           max-width: 350px;
+          will-change: transform;
+          transform: scale(0.85);
+          transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+          filter: grayscale(100%) sepia(20%) brightness(80%);
+
+          &:hover {
+            transform: scale(1);
+            filter: none;
+          }
         }
       }
     }

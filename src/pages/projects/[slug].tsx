@@ -1,8 +1,8 @@
 import { BannerProject } from '../../components/BannerProject';
-// import { ProjectContainer } from './styled';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { client } from '../../lib/apollo';
 import { getProjectBySlug, GET_PROJECTS } from '../../constants/querys';
+import { ProjectContainer } from './styled';
 
 interface IProject {
   slug: string;
@@ -24,14 +24,14 @@ interface HomeProjects {
 
 export default function ProjectSlug({ project }: HomeProjects) {
   return (
-    <section>
+    <ProjectContainer>
       <BannerProject
         title={project.title}
         type={project.typeprojects}
         imgUrl={project.image.url}
         description={project.description.text}
       />
-    </section>
+    </ProjectContainer>
   );
 }
 

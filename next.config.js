@@ -6,7 +6,7 @@ module.exports = withImages({
 
 module.exports = {
   images: {
-    domains: ['wnka.co'],
+    domains: ['wnka.co', 'i.imgur.com'],
   },
   build : { 
     transpile : [ 'gsap' ] 

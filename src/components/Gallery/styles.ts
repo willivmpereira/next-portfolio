@@ -27,6 +27,8 @@ export const SectionContainer = styled.div`
     font-weight: 600;
     font-size: 16px;
     display: inline-block;
+    mix-blend-mode: difference;
+    -webkit-font-smoothing: antialiased;
 
     @media screen and (max-width: 768px){
       top: 5%;
@@ -73,8 +75,7 @@ export const GalleryItemContent = styled.div<GalleryItemContentProps>`
         line-height: 6vw;
         font-weight: 600;
         font-size: 6vw;
-
-          
+        -webkit-font-smoothing: antialiased;
       }
 
       a {
@@ -87,6 +88,7 @@ export const GalleryItemContent = styled.div<GalleryItemContentProps>`
         color: transparent;
         font-weight: 400;
         font-size: 6vw;
+        -webkit-font-smoothing: antialiased;
       }
 
       .gallery-info-category {
