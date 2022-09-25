@@ -8,6 +8,7 @@ import { MyServices } from '../components/MyServices';
 import { client } from '../lib/apollo';
 import { Gallery } from '../components/Gallery';
 import { GET_PROJECTS } from '../constants/querys';
+import React from 'react';
 
 interface IProjects {
   slug: string;
@@ -20,29 +21,37 @@ interface IProjects {
 }
 interface HomeProjects {
   projectss: IProjects[];
-  projects: any
+  projects: any;
 }
 
 export default function Home({ projects }: HomeProjects) {
+  
+
   return (
-    <HomeContainer className='main-container' id='main-container'>
-      <Header />
-      <About />
-      <Gallery projects={projects.projects} />
-      <MyServices />
-      {/* <Projects projects={projects.projects} /> */}
-      <Contact />
-    </HomeContainer>
+    <>
+        <div
+          
+        >
+          <HomeContainer className="main-container"
+          id="main-container"
+          data-scroll-container
+         >
+            <Header />
+            <About />
+            <Gallery projects={projects.projects} />
+            <MyServices />
+            {/* <Projects projects={projects.projects} /> */}
+            <Contact />
+          </HomeContainer>
+        </div>
+    </>
   );
 }
 
-
-
 export const getStaticProps: GetStaticProps = async () => {
-
-    const { data } = await client.query({
-      query: GET_PROJECTS
-    })
+  const { data } = await client.query({
+    query: GET_PROJECTS
+  });
 
   return {
     props: {

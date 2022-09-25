@@ -17,19 +17,15 @@ export const SectionContainer = styled.div`
     top: 10%;
     left: 100px;
     z-index: 1;
-    mix-blend-mode: difference;
     line-height: 16px;
-    color: #dbd8d6;
-
+    color: ${({ theme }) => theme.colors.whiteColor};
     font-weight: 600;
-
     font-size: 16px;
-    -webkit-font-smoothing: antialiased;
     display: inline-block;
 
     .divider {
       content: '';
-      background-color: white;
+      background-color: ${({ theme }) => theme.colors.whiteColor};
       width: 6.25vw;
       margin: 7px 10px;
       height: 1px;
@@ -38,8 +34,7 @@ export const SectionContainer = styled.div`
   }
 
   .gallery {
-    height: 80vh;
-
+    height: 100vh;
     padding: 10vh 0;
     width: 400%;
     display: flex;
@@ -61,14 +56,20 @@ export const GalleryItemContent = styled.div<GalleryItemContentProps>`
       bottom: 10%;
       z-index: 1;
       transform: translateX(-20%);
-      color: #dbd8d6;
-      color: white;
+      color: ${({ theme }) => theme.colors.whiteColor};
+      background-color: ${({ theme }) => theme.colors.darkColor};
+      padding: 1rem;
+
       .gallery-info-title {
         line-height: 6vw;
         font-weight: 600;
-
         font-size: 6vw;
-        -webkit-font-smoothing: antialiased;
+
+          
+      }
+
+      a {
+        color: ${({ theme }) => theme.colors.whiteColor}
       }
 
       .gallery-info-subtitle {
@@ -77,8 +78,6 @@ export const GalleryItemContent = styled.div<GalleryItemContentProps>`
         color: transparent;
         font-weight: 400;
         font-size: 6vw;
-        -webkit-font-smoothing: antialiased;
-        -webkit-text-stroke: 2px #dbd8d6;
       }
 
       .gallery-info-category {

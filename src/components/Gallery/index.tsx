@@ -5,8 +5,6 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { GalleryItems } from './GalleryItem';
 
 export const Gallery = ({ projects }: any) => {
-  console.log(projects);
-
   const [activeImage, setActiveImage] = useState(1);
   const ref = useRef(null);
 
@@ -52,6 +50,7 @@ export const Gallery = ({ projects }: any) => {
               key={image.id}
               index={index}
               imgUrl={image.image.url}
+              slug={image.slug}
             //   {...image}
               updateActiveImage={handleUpdateActiveImage}
             />
