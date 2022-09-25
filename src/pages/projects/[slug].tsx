@@ -2,7 +2,8 @@ import { BannerProject } from '../../components/BannerProject';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { client } from '../../lib/apollo';
 import { getProjectBySlug, GET_PROJECTS } from '../../constants/querys';
-import { ProjectContainer } from './styled';
+import { ProjectContainer } from '../../styles/ProjectStyles';
+
 
 interface IProject {
   slug: string;

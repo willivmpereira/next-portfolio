@@ -25,25 +25,22 @@ interface HomeProjects {
 }
 
 export default function Home({ projects }: HomeProjects) {
-  
-
   return (
     <>
-        <div
-          
-        >
-          <HomeContainer className="main-container"
+      <div>
+        <HomeContainer
+          className="main-container"
           id="main-container"
           data-scroll-container
-         >
-            <Header />
-            <About />
-            <Gallery projects={projects.projects} />
-            <MyServices />
-            {/* <Projects projects={projects.projects} /> */}
-            <Contact />
-          </HomeContainer>
-        </div>
+        >
+          <Header />
+          <About />
+          <Gallery projects={projects.projects} />
+          <MyServices />
+          {/* <Projects projects={projects.projects} /> */}
+          <Contact />
+        </HomeContainer>
+      </div>
     </>
   );
 }
