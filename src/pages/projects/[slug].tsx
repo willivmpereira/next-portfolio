@@ -8,7 +8,9 @@ import { gql } from '@apollo/client';
 interface IProject {
   slug: string;
   title: string;
-  description: string[];
+  description: {
+    text: string;
+  }
   id: string;
   image: {
     url: string;
@@ -28,6 +30,7 @@ export default function ProjectSlug({ project }: HomeProjects) {
         title={project.title}
         type={project.typeprojects}
         imgUrl={project.image.url}
+        description={project.description.text}
       />
     </ProjectContainer>
   );

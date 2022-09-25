@@ -42,6 +42,10 @@ export const ContactContent = styled.section`
         }
       }
     }
+
+    @media screen and (max-width: 768px){
+      grid-template-columns: .10fr 1fr;
+    }
   }
 
   @keyframes wave-animation {
@@ -133,6 +137,10 @@ export const FormContainer = styled.form`
       &:last-of-type {
         grid-column: 1 / 3;
       }
+
+      @media screen and (max-width: 768px){
+       grid-column:1 / 3;
+      }
     }
 
     button {
@@ -148,6 +156,10 @@ export const FormContainer = styled.form`
         background-color: transparent;
         color: ${({ theme }) => theme.colors.darkColor};
       }
+    }
+    
+    @media screen and (max-width: 768px){
+      grid-template-columns: 1fr;
     }
   }
 `;

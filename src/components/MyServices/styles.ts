@@ -101,6 +101,10 @@ export const MyServicesContainer = styled.section`
                 }
             }
         }
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
     }
 
     @keyframes up {

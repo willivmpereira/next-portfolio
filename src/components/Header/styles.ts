@@ -157,6 +157,10 @@ export const MenuContainer = styled.div`
     font-weight: 400;
     color: rgba(255,255,255,0.1);
     z-index: -1;
+
+    @media screen and (max-width: 768px){
+      font-size: 8rem;
+    }
   }
 
   .exit {

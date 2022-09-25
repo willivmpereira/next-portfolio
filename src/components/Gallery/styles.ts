@@ -10,6 +10,11 @@ export const SectionContainer = styled.div`
     margin-left: -5vw;
     margin-right: -5vw;
     position: relative;
+    overflow: hidden;
+
+    @media screen and (max-width: 768px){
+      margin: 0;
+    }
   }
 
   .gallery-counter {
@@ -22,6 +27,10 @@ export const SectionContainer = styled.div`
     font-weight: 600;
     font-size: 16px;
     display: inline-block;
+
+    @media screen and (max-width: 768px){
+      top: 5%;
+    }
 
     .divider {
       content: '';
@@ -114,5 +123,9 @@ export const GalleryItemContent = styled.div<GalleryItemContentProps>`
       transform: scale(0.7);
       transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
       filter: grayscale(100%) sepia(20%) brightness(80%);
+
+      @media screen and (max-width: 768px){
+      width: 70vw;
+    }
     }
 `
