@@ -3,7 +3,6 @@ import { ProjectContainer } from './styled';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { client } from '../../lib/apollo';
 import { getProjectBySlug, GET_PROJECTS } from '../../constants/querys';
-import { gql } from '@apollo/client';
 
 interface IProject {
   slug: string;
@@ -23,7 +22,7 @@ interface HomeProjects {
   project: IProject;
 }
 
-export default function ProjectSlug({ project }: HomeProjects) {
+export const ProjectSlug = ({ project }: HomeProjects) => {
   return (
     <ProjectContainer>
       <BannerProject
