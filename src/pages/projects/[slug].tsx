@@ -1,5 +1,5 @@
 import { BannerProject } from '../../components/BannerProject';
-import { ProjectContainer } from './styled';
+// import { ProjectContainer } from './styled';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { client } from '../../lib/apollo';
 import { getProjectBySlug, GET_PROJECTS } from '../../constants/querys';
