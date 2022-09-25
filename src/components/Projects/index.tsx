@@ -1,7 +1,5 @@
 import { ProjectsContent, Teste } from './style';
 import { ProjectItem } from './ProjectItem';
-import { PROJECTS } from '../../constants';
-
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import { useEffect } from 'react';

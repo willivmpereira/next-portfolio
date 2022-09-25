@@ -1,15 +1,15 @@
 import Link from "next/link"
 import { Content } from "./style"
 
-// interface ProjectItemProps {
-//   slug: string;
-//   title: string;
-//   description: string;
-//   id: string;
-//   image: string[];
-//   tags: string[];
-//   type: string;
-// }
+interface ProjectItemProps {
+  slug: string;
+  title: string;
+  description: string;
+  id: string;
+  image: string[];
+  tags: string[];
+  type: string;
+}
 
 export const ProjectItem = ({type, title, description, image, slug, tags}: any) => {
     return (

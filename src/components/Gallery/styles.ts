@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+interface GalleryItemContentProps {
+  imgUrl: string;
+}
+
 export const SectionContainer = styled.div`
   .gallery-wrap {
     background-color: ${({ theme }) => theme.colors.ascent};
@@ -41,13 +45,17 @@ export const SectionContainer = styled.div`
     display: flex;
     flex-wrap: nowrap;
 
+    }
+`;
+
+export const GalleryItemContent = styled.div<GalleryItemContentProps>`
+
     .gallery-item {
       width: 100%;
       height: 100%;
       position: relative;
       will-change: transform;
     }
-
     .gallery-item-info {
       position: absolute;
       bottom: 10%;
@@ -97,7 +105,7 @@ export const SectionContainer = styled.div`
       }
     }
     .gallery-item-image {
-      background: url(https://raw.githubusercontent.com/rogerrm95/coffee-delivery/main/src/assets/capa.png);
+      background: url(${props => props.imgUrl});
       background-size: cover;
       background-position: center;
       transform-origin: center;
@@ -108,5 +116,4 @@ export const SectionContainer = styled.div`
       transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
       filter: grayscale(100%) sepia(20%) brightness(80%);
     }
-  }
-`;
+`

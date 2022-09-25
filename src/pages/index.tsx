@@ -5,7 +5,6 @@ import { Projects } from '../components/Projects';
 import { Contact } from '../components/Contact';
 import { GetStaticProps } from 'next';
 import { MyServices } from '../components/MyServices';
-import { gql, useQuery } from '@apollo/client';
 import { client } from '../lib/apollo';
 import { Gallery } from '../components/Gallery';
 import { GET_PROJECTS } from '../constants/querys';
@@ -29,9 +28,9 @@ export default function Home({ projects }: HomeProjects) {
     <HomeContainer className='main-container' id='main-container'>
       <Header />
       <About />
-      {/* <Gallery/> */}
+      <Gallery projects={projects.projects} />
       <MyServices />
-      <Projects projects={projects.projects} />
+      {/* <Projects projects={projects.projects} /> */}
       <Contact />
     </HomeContainer>
   );
