@@ -11,6 +11,8 @@ export const Gallery = ({ projects }: any) => {
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
     setTimeout(() => {
+      let offwidth = ref.current.offsetWidth
+
       const sections = gsap.utils.toArray('.gallery-item-wrapper');
 
       gsap.to(sections, {
@@ -22,7 +24,7 @@ export const Gallery = ({ projects }: any) => {
           pin: true,
           scrub: 0.5,
           snap: 1 / (sections.length - 1),
-          end: () => `+=${ref.current.offsetWidth}`
+          end: () => `+=${offwidth}`
         }
       });
       ScrollTrigger.refresh();
