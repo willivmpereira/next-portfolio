@@ -61,14 +61,18 @@ export const MyServicesContainer = styled.section`
           position: relative;
           overflow: hidden;
           transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
-
           cursor: pointer;
+
+          img {
+            border-radius: 50%;
+            transform: translateY(0px);
+            transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+          }
 
           &:hover {
             img {
               transform: translateY(-20px);
               opacity: 1;
-              transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
             }
 
             .overlay {
@@ -83,7 +87,7 @@ export const MyServicesContainer = styled.section`
             left: 0;
             width: 100%;
             height: 100%;
-            background: url(https://i.imgur.com/HdW5ULT.jpeg);
+            background: url(https://media.graphassets.com/xy6LMU3ySM6FYMJAh855?_gl=1*1ojau6z*_ga*OTgwNjIwNjkzLjE2NjM4NDc2Mjg.*_ga_G6FYGSYGZ4*MTY2NTE4OTk2MS4xMi4xLjE2NjUxOTA3OTcuNTcuMC4w);
             background-position: bottom;
             background-size: cover;
             background-repeat: no-repeat;

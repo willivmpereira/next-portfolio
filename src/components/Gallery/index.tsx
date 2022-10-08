@@ -13,7 +13,7 @@ export const Gallery = ({ projects }: any) => {
     setTimeout(() => {
       let offwidth = ref.current.offsetWidth
 
-      const sections = gsap.utils.toArray('.gallery-item-wrapper');
+      let sections = gsap.utils.toArray('.gallery-item-wrapper');
 
       gsap.to(sections, {
         xPercent: -100 * (sections.length - 1),
