@@ -26,8 +26,8 @@ export const MyServices = () => {
                 tab.classList.remove('active');
 
                 detailMe.classList.remove('animation');
-                title.innerHTML = 'O que eu faço 🤔'
-                subtitle.innerHTML = 'Clique ou passe com o mouse por cima dos ícones'
+                title.innerHTML = 'What i do 🤔'
+                subtitle.innerHTML = 'Hover or click in icons'
             })
         })
     })
@@ -37,8 +37,8 @@ export const MyServices = () => {
             <div className="container">
                 <div className="display">
                     <div className="detail_me">
-                        <h2 className="title">O que eu faço 🤔</h2>
-                        <h5 className="subtitle">Clique ou passe com o mouse por cima dos ícones</h5>
+                        <h2 className="title">What i do 🤔</h2>
+                        <h5 className="subtitle">Hover or click in icons</h5>
                     </div>
                     <div className="icons">
                         <ul>

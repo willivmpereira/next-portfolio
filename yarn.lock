@@ -4739,6 +4739,11 @@ react-refresh@0.8.3:
   resolved "https://registry.npmjs.org/react-refresh/-/react-refresh-0.8.3.tgz"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
 
+react-tags-canvas@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-tags-canvas/-/react-tags-canvas-1.0.1.tgz#238610f3d13c09a0b49506d0c2fb2ab17e115385"
+  integrity sha512-Zfhp/eewYQeNvqRTyhz7yFYpdwaN3WYRfdZtTMJENgn4aiQQm49QLBsupr/JXGwtBDk4MK9MbvjefFv9etH2YQ==
+
 react@17.0.2:
   version "17.0.2"
   resolved "https://registry.npmjs.org/react/-/react-17.0.2.tgz"

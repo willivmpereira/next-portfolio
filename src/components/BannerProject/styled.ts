@@ -6,7 +6,7 @@ interface BannerProjectContainerProps {
 
 export const BannerProjectContainer = styled.div<BannerProjectContainerProps>`
   width: 100%;
-  background: url(${props => props.imgUrl}) no-repeat center;
+  background: url(${props => props.imgUrl}) no-repeat top;
   background-size: cover;
   height: 25rem;
   position: relative;
