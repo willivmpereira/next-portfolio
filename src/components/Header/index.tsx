@@ -90,8 +90,8 @@ export function Header() {
         <section>
           <div className="hero" ref={el => hero = el}>
             <Image
-              src="https://wnka.co/wp-content/uploads/2018/01/travis-scott-astroworld-2019-cr-Julian-Bajsel-billboard-1548-compressed.jpg"
-              alt="Banner AstroWorld"
+              src="https://upload.wikimedia.org/wikipedia/commons/7/73/God2-Sistine_Chapel.png"
+              alt="Banner Header"
               layout="fill"
             />
             <h1 className="headline">William</h1>
