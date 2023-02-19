@@ -13,7 +13,6 @@ export const BannerProject = ({
   type,
   imgUrl
 }: BannerProjectProps) => {
-  console.log(description);
   return (
     <>
       <BannerProjectContainer imgUrl={imgUrl}>
@@ -25,8 +24,7 @@ export const BannerProject = ({
       </BannerProjectContainer>
 
       <div className="container">
-        <p dangerouslySetInnerHTML={{ __html: description }}>
-                        </p>
+        <p dangerouslySetInnerHTML={{ __html: description }}></p>
       </div>
     </>
   );

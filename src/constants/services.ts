@@ -12,8 +12,8 @@ export const SERVICESINFO = [
         description: "Tenha um websites funcional, bonito e atrativo para consolidar o seu negócio no âmbito digital e atrair cada vez mais clientes para sua microempresa!"
     },
     {
-        name: "Google Ads",
-        description: "Aumente suas visitas em seu site aproximando-se do seu público, melhorando seu posicionamento nos sites de pesquisa e expandindo sua marca na internet."
+        name: "Google Analitycs",
+        description: "Aumente suas visitas em seu site aproximando-se do seu público, melhorando seu posicionamento nos sites de pesquisa e expandindo sua marca na internet.",
     },
     {
         name: "E-Commerce",
