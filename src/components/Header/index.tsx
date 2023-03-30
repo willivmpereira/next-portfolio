@@ -4,9 +4,16 @@ import { Container, MenuContainer } from './styles';
 import gsap, { Power2, TimelineLite } from "gsap";
 import { IconContext } from "react-icons";
 import { CgMenuMotion, CgClose } from 'react-icons/cg';
+import { BACKGROUND } from '../../constants/background';
 
 
 export function Header() {
+
+  const date = new Date();
+  const month = date.getMonth();
+  const day = date.getDate()
+
+  const backgroundToday = BACKGROUND[month].days[day].urlImage
 
   let hero: any = useRef(null);
   let slide: any = useRef(null);
@@ -90,7 +97,7 @@ export function Header() {
         <section>
           <div className="hero" ref={el => hero = el}>
             <Image
-              src="https://upload.wikimedia.org/wikipedia/commons/7/73/God2-Sistine_Chapel.png"
+              src={backgroundToday}
               alt="Banner Header"
               layout="fill"
             />

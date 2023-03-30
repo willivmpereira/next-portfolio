@@ -1,26 +1,26 @@
 export const SERVICESINFO = [
     {
         name: "WebApp",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, at?"
-    },
-    {
-        name: "Landing Page",
-        description: "Página que possui todos os elementos voltados à conversão do visitante em Lead, oportunidade ou cliente. Também conhecidas como páginas de aterrissagem ou páginas de conversão."
+        description: "Aplicativo que funciona diretamente em um navegador da web e não precisa ser baixado ou instalado em um dispositivo específico. Podem oferecer funcionalidades semelhantes às de um aplicativo nativo, como armazenamento offline, notificações push e acesso a hardware do dispositivo."
     },
     {
         name: "Website",
-        description: "Tenha um websites funcional, bonito e atrativo para consolidar o seu negócio no âmbito digital e atrair cada vez mais clientes para sua microempresa!"
+        description: "conjunto de páginas web interconectadas que podem ser acessadas pela internet. Os websites podem ser usados para diversos fins, como fornecer informações, vender produtos ou serviços, criar comunidades online, entre outros. Ter um website é importante para empresas e indivíduos que desejam aumentar sua presença online."
     },
     {
-        name: "Google Analitycs",
-        description: "Aumente suas visitas em seu site aproximando-se do seu público, melhorando seu posicionamento nos sites de pesquisa e expandindo sua marca na internet.",
+        name: "Landing Page",
+        description: "Página web projetada especificamente para levar um visitante a realizar uma ação, como preencher um formulário, fazer uma compra, inscrever-se em um serviço. A criação de uma landing page eficaz pode ajudar a aumentar as taxas de conversão e a atingir seus objetivos de negócios."
     },
     {
         name: "E-Commerce",
-        description: "O e-commerce é uma tendência cada vez mais consolidada no digital, e é a oportunidade perfeita para microempreendedores encontrarem seu espaço no mercado e crescerem exponencialmente!"
+        description: "modelo de negócios que envolve a venda de produtos ou serviços pela internet. Ele permite que os consumidores façam compras online de forma conveniente e segura, utilizando diferentes dispositivos, como computadores, tablets e smartphones."
     },
     {
-        name: "Websites",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, at?"
+        name: "SEO",
+        description: "conjunto de técnicas usadas para melhorar a visibilidade e o posicionamento de um site nos resultados de pesquisa do Google e outros mecanismos de busca. As técnicas incluem a escolha de palavras-chave relevantes, a otimização de títulos e descrições de páginas, a melhoria da velocidade de carregamento do site, a otimização para dispositivos móveis, entre outras."
+    },
+    {
+        name: "Google Analitycs",
+        description: "Ferramenta de análise de dados oferecida pelo Google que permite acompanhar o tráfego do seu site e obter insights sobre como os usuários interagem com ele. Ele fornece informações sobre o número de visitantes, páginas mais visitadas, tempo gasto no site, localização geográfica dos visitantes, dispositivos usados e muito mais.",
     },
 ]

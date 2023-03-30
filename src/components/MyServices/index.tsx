@@ -18,7 +18,7 @@ export const MyServices = () => {
 
                 detailMe.classList.add('animation')
                 title.innerHTML = SERVICESINFO[index].name
-                subtitle.innerHTML = 'oie'
+                subtitle.innerHTML = SERVICESINFO[index].description
 
             })
 
@@ -38,7 +38,7 @@ export const MyServices = () => {
                 <div className="display">
                     <div className="detail_me">
                         <h2 className="title">What i do 🤔</h2>
-                        <h5 className="subtitle">Hover or click in icons</h5>
+                        <p className="subtitle">Hover or click in icons</p>
                     </div>
                     <div className="icons">
                         <ul>
