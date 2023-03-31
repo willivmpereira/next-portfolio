@@ -101,7 +101,7 @@ export function Header() {
               alt="Banner Header"
               layout="fill"
             />
-            <h1 className="headline">William</h1>
+            <h1 className="headline">Bonsoir</h1>
           </div>
         </section>
         <button aria-label="Go down" className="go-down" ref={el => godown = el}></button>

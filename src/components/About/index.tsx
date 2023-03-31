@@ -12,17 +12,13 @@ export const About = () => {
           <div className="about__title">
             <h4>Let's Connect</h4>
             <h1>Me, Myself & I</h1>
-            <div className="photo__me">
-              <Imagem
-                src="https://media.graphassets.com/xy6LMU3ySM6FYMJAh855?_gl=1*1ojau6z*_ga*OTgwNjIwNjkzLjE2NjM4NDc2Mjg.*_ga_G6FYGSYGZ4*MTY2NTE4OTk2MS4xMi4xLjE2NjUxOTA3OTcuNTcuMC4w"
-                alt="Foto do William"
-                width={350}
-                height={466}
-              />
-            </div>
+            <div className="blob"></div>
           </div>
           <div className="about__description">
             <p dangerouslySetInnerHTML={{ __html: ABOUT.description }}></p>
+          </div>
+          <div className="stroke">
+            <h2>william</h2>
           </div>
         </div>
       </div>

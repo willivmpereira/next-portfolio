@@ -87,7 +87,7 @@ export const MyServicesContainer = styled.section`
             left: 0;
             width: 100%;
             height: 100%;
-            background: url(https://media.graphassets.com/xy6LMU3ySM6FYMJAh855?_gl=1*1ojau6z*_ga*OTgwNjIwNjkzLjE2NjM4NDc2Mjg.*_ga_G6FYGSYGZ4*MTY2NTE4OTk2MS4xMi4xLjE2NjUxOTA3OTcuNTcuMC4w);
+            background: url(https://dummyimage.com/100x100/000/fff);
             background-position: bottom;
             background-size: cover;
             background-repeat: no-repeat;

@@ -44,7 +44,7 @@ export const MyServices = () => {
                         <ul>
                             {SERVICESINFO.map(item => (
                             <li className="person" key={item.name}>
-                                <img src="https://dummyimage.com/100x100/000/fff" width={100} height={100} alt="" />
+                                <img src={item.icon} width={100} height={100} alt="" />
                                 <div className="overlay"></div>
                             </li>
                             )) }
