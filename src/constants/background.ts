@@ -112,7 +112,22 @@ export const BACKGROUND = [
     {
         days: [
             {
-                urlImage: "https://en.wikipedia.org/wiki/Venus_and_Mars_(Botticelli)#/media/File:Venus_and_Mars_National_Gallery.jpg"
+                urlImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Venus_and_Mars_National_Gallery.jpg/2560px-Venus_and_Mars_National_Gallery.jpg"
+            },
+            {
+                urlImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Venus_and_Mars_National_Gallery.jpg/2560px-Venus_and_Mars_National_Gallery.jpg"
+            },
+            {
+                urlImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Venus_and_Mars_National_Gallery.jpg/2560px-Venus_and_Mars_National_Gallery.jpg"
+            },
+            {
+                urlImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Venus_and_Mars_National_Gallery.jpg/2560px-Venus_and_Mars_National_Gallery.jpg"
+            },
+            {
+                urlImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Venus_and_Mars_National_Gallery.jpg/2560px-Venus_and_Mars_National_Gallery.jpg"
+            },
+            {
+                urlImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Venus_and_Mars_National_Gallery.jpg/2560px-Venus_and_Mars_National_Gallery.jpg"
             }
         ]
     },

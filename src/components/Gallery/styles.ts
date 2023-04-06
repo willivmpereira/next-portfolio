@@ -116,8 +116,9 @@ export const GalleryItemContent = styled.div<GalleryItemContentProps>`
     }
     .gallery-item-image {
       background: url(${props => props.imgUrl});
-      background-size: cover;
+      background-size: contain;
       background-position: center;
+      background-repeat: no-repeat;
       transform-origin: center;
       width: 100%;
       height: 100%;

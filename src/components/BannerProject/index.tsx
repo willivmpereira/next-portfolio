@@ -1,17 +1,19 @@
-import { BannerProjectContainer } from './styled';
+import { BannerProjectContainer, ContentBanner } from './styled';
 
 interface BannerProjectProps {
   title: string;
   type: string;
   imgUrl: string;
   description: string;
+  tags: any;
 }
 
 export const BannerProject = ({
   title,
   description,
   type,
-  imgUrl
+  imgUrl,
+  tags
 }: BannerProjectProps) => {
   return (
     <>
@@ -24,7 +26,14 @@ export const BannerProject = ({
       </BannerProjectContainer>
 
       <div className="container">
-        <p dangerouslySetInnerHTML={{ __html: description }}></p>
+        <ContentBanner>
+          <p dangerouslySetInnerHTML={{ __html: description }}></p>
+          <ul className="tags">
+            {tags[0].tag.map(item => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </ContentBanner>
       </div>
     </>
   );

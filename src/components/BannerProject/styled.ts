@@ -41,3 +41,23 @@ export const BannerProjectContainer = styled.div<BannerProjectContainerProps>`
     }
   }
 `;
+
+export const ContentBanner = styled.div `
+  p {
+    margin: 1rem 0;
+  }
+  .tags {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+
+    li {
+      border: dashed 1px #ccc;
+      color: #ccc;
+      padding: .25rem .5rem;
+      border-radius: 14px;
+      font-size: .85rem;
+    }
+  }
+`

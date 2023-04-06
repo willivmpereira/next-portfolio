@@ -6,7 +6,7 @@ export const GET_PROJECTS = gql`
       slug
       title
       description {
-        text
+        html
       }
       id
       image {
@@ -27,7 +27,7 @@ export const getProjectBySlug = (slug: string | string[]) => {
       slug
       title
       description {
-        text
+        html
       }
       id
       image {
