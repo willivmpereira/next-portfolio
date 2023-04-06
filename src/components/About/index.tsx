@@ -1,15 +1,12 @@
 import { ABOUT } from '../../constants/about';
 import { AboutUs } from './styles';
 import Imagem from 'next/image';
-import MyPhoto from '../../assets/img/foto60.jpg';
+import MyPhoto from '../../assets/img/me.webp';
 import TagsCanvas from 'react-tags-canvas';
 
-export const About = (props) => {
+export const About = () => {
   return (
     <AboutUs>
-      <Imagem src={MyPhoto} alt="Picture of the author"
-      width="350px"
-      height="300px" layout="responsive" />
       <div className="container">
         <div className="display">
           <div className="about__title">
