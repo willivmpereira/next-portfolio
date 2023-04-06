@@ -30,7 +30,7 @@ export const BannerProject = ({
           <p dangerouslySetInnerHTML={{ __html: description }}></p>
           <ul className="tags">
             {tags[0].tag.map(item => (
-              <li>{item}</li>
+              <li key={item}>{item}</li>
             ))}
           </ul>
         </ContentBanner>

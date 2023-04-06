@@ -102,6 +102,9 @@ export const AboutUs = styled.div`
 }
     }
     .about__description {
+      position: relative;
+      z-index: 1;
+
       p {
         margin-top: 2rem;
         line-height: 1.7;
