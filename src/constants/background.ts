@@ -42,25 +42,25 @@ export const BACKGROUND = [
                 urlImage: "https://en.wikipedia.org/wiki/Venus_and_Mars_(Botticelli)#/media/File:Venus_and_Mars_National_Gallery.jpg"
             },
             {
-                urlImage: "https://en.wikipedia.org/wiki/Venus_and_Mars_(Botticelli)#/media/File:Venus_and_Mars_National_Gallery.jpg"
+                urlImage: "https://images4.alphacoders.com/133/133184.jpg"
             },
             {
-                urlImage: "https://en.wikipedia.org/wiki/Venus_and_Mars_(Botticelli)#/media/File:Venus_and_Mars_National_Gallery.jpg"
+                urlImage: "https://images.alphacoders.com/385/3853.jpg"
             },
             {
-                urlImage: "https://en.wikipedia.org/wiki/Venus_and_Mars_(Botticelli)#/media/File:Venus_and_Mars_National_Gallery.jpg"
+                urlImage: "https://images3.alphacoders.com/772/772935.jpg"
             },
             {
-                urlImage: "https://en.wikipedia.org/wiki/Venus_and_Mars_(Botticelli)#/media/File:Venus_and_Mars_National_Gallery.jpg"
+                urlImage: "https://images8.alphacoders.com/644/644929.jpg"
             },
             {
-                urlImage: "https://en.wikipedia.org/wiki/Venus_and_Mars_(Botticelli)#/media/File:Venus_and_Mars_National_Gallery.jpg"
+                urlImage: "https://images4.alphacoders.com/262/262808.jpg"
             },
             {
-                urlImage: "https://en.wikipedia.org/wiki/Venus_and_Mars_(Botticelli)#/media/File:Venus_and_Mars_National_Gallery.jpg"
+                urlImage: "https://images3.alphacoders.com/102/1028892.jpg"
             },
             {
-                urlImage: "https://en.wikipedia.org/wiki/Venus_and_Mars_(Botticelli)#/media/File:Venus_and_Mars_National_Gallery.jpg"
+                urlImage: "https://images4.alphacoders.com/615/615530.jpg"
             },
             {
                 urlImage: "https://en.wikipedia.org/wiki/Venus_and_Mars_(Botticelli)#/media/File:Venus_and_Mars_National_Gallery.jpg"
@@ -128,7 +128,51 @@ export const BACKGROUND = [
             },
             {
                 urlImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Venus_and_Mars_National_Gallery.jpg/2560px-Venus_and_Mars_National_Gallery.jpg"
-            }
+            },
+            {
+                urlImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Venus_and_Mars_National_Gallery.jpg/2560px-Venus_and_Mars_National_Gallery.jpg"
+            },
+            {
+                urlImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Venus_and_Mars_National_Gallery.jpg/2560px-Venus_and_Mars_National_Gallery.jpg"
+            },
+            {
+                urlImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Venus_and_Mars_National_Gallery.jpg/2560px-Venus_and_Mars_National_Gallery.jpg"
+            },
+            {
+                urlImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Venus_and_Mars_National_Gallery.jpg/2560px-Venus_and_Mars_National_Gallery.jpg"
+            },
+            {
+                urlImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Venus_and_Mars_National_Gallery.jpg/2560px-Venus_and_Mars_National_Gallery.jpg"
+            },
+            {
+                urlImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Venus_and_Mars_National_Gallery.jpg/2560px-Venus_and_Mars_National_Gallery.jpg"
+            },
+            {
+                urlImage: "https://images3.alphacoders.com/772/772935.jpg"
+            },
+            {
+                urlImage: "https://images3.alphacoders.com/772/772935.jpg"
+            },
+            {
+                urlImage: "https://images4.alphacoders.com/133/133184.jpg"
+            },
+            {
+                urlImage: "https://images.alphacoders.com/385/3853.jpg"
+            },
+            
+            {
+                urlImage: "https://images8.alphacoders.com/644/644929.jpg"
+            },
+            {
+                urlImage: "https://images4.alphacoders.com/262/262808.jpg"
+            },
+            {
+                urlImage: "https://images3.alphacoders.com/102/1028892.jpg"
+            },
+            {
+                urlImage: "https://images4.alphacoders.com/615/615530.jpg"
+            },
+            
         ]
     },
     {

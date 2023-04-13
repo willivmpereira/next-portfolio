@@ -55,6 +55,7 @@ export const Container = styled.div`
           transform: translate(-20%, -70%);
           color: white;
           z-index: 3;
+          text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
         }
 
         &::after {

@@ -96,11 +96,7 @@ export function Header() {
         </MenuContainer>
         <section>
           <div className="hero" ref={el => hero = el}>
-            <Image
-              src={backgroundToday}
-              alt="Banner Header"
-              layout="fill"
-            />
+            <Image src={backgroundToday} alt="Banner Header" layout="fill"/>
             <h1 className="headline">Bonsoir</h1>
           </div>
         </section>

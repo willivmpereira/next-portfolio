@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import meImg from '../../../public/me.jpg'
 
 export const AboutUs = styled.div`
   position: relative;
@@ -26,6 +27,12 @@ export const AboutUs = styled.div`
         font-weight: 700;
         line-height: 1.3;
         margin: 2rem 0;
+
+        span {
+          font-size: 0.5rem;
+          display: block;
+          font-weight: 400;
+        }
       }
 
       .blob {
@@ -50,7 +57,7 @@ export const AboutUs = styled.div`
           bottom: 5px;
           left: 5px;
           background-color: #000;
-          background-image: url(https://media.graphassets.com/xy6LMU3ySM6FYMJAh855?_gl=1*1ojau6z*_ga*OTgwNjIwNjkzLjE2NjM4NDc2Mjg.*_ga_G6FYGSYGZ4*MTY2NTE4OTk2MS4xMi4xLjE2NjUxOTA3OTcuNTcuMC4w);
+          background-image: url(${meImg});
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center;
@@ -126,5 +133,30 @@ export const AboutUs = styled.div`
         margin: 0;
         opacity: 0.15;
       }
+
+
+      @media screen and (max-width: 768px){
+        display: none;
+        visibility: hidden;
+      }
+
+    }
+
+    .selo {
+      position: absolute;
+      z-index: 9;
+      right: 5rem;
+      bottom: 0;
+      transform: translateY(115px);
+
+        svg {
+          transform: translate(-50%, -50%);
+          animation: spin 4.5s linear infinite;
+        }
+    }
+
+    @keyframes spin {
+      0%{ transform: translate(-50%, -50%) rotate(0deg); }
+      100%{ transform: translate(-50%, -50%) rotate(360deg); }
     }
 `;
