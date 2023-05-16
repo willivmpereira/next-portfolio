@@ -5,12 +5,12 @@ export const Form = () => {
     <FormContainer>
       <div className="display">
         <div className="input__group">
-          <label htmlFor="name">Your Name</label>
-          <input type="text" name="name" id="name" placeholder="Your name" />
+          <label htmlFor="name">Seu Nome</label>
+          <input type="text" name="name" id="name" placeholder="Seu nome" />
         </div>
         <div className="input__group">
-          <label htmlFor="email">Your email</label>
-          <input type="email" name="email" id="email" placeholder="Your email" />
+          <label htmlFor="email">Seu E-mail</label>
+          <input type="email" name="email" id="email" placeholder="Seu E-mail" />
         </div>
         <div className="input__group">
           <label htmlFor="which">What would you like</label>
@@ -32,7 +32,7 @@ export const Form = () => {
           <label htmlFor="textarea">Message</label>
           <textarea name="textArea" id="textarea" cols={30} rows={10}></textarea>
         </div>
-        <button>Just Send</button>
+        <button>Vamos lá</button>
       </div>
     </FormContainer>
   );

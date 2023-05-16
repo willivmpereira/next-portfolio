@@ -16,6 +16,15 @@ export const About = () => {
           </div>
           <div className="about__description">
             <p dangerouslySetInnerHTML={{ __html: ABOUT.description }}></p>
+            <div className="techs">
+              <ul>
+                <li>Angular</li>
+                <li>ReactJs</li>
+                <li>Next.js</li>
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
           </div>
           <div className="stroke">
             <h2>william</h2>

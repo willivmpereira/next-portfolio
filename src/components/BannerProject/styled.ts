@@ -53,8 +53,8 @@ export const ContentBanner = styled.div `
     gap: .75rem;
 
     li {
-      border: dashed 1px #ccc;
-      color: #ccc;
+      border: dashed 1px #949494;
+      color: #949494;
       padding: .25rem .5rem;
       border-radius: 14px;
       font-size: .85rem;

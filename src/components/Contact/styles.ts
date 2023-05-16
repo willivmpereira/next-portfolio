@@ -104,6 +104,7 @@ export const FormContainer = styled.form`
 
       select {
         display: inline-block;
+        background-color: #D9D9D9;
         background-image: url(https://global-uploads.webflow.com/622a28e521e704987517a900/622a28e521e704317317a97c_dropdown.svg);
         background-position: 97% 50%;
         background-size: auto;

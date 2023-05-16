@@ -27,10 +27,7 @@ export const GalleryItems = ({ imgUrl, title, index, type, slug, updateActiveIma
 
     return (
         <GalleryItemContent imgUrl={imgUrl}>
-            <div
-            className={cn("gallery-item-wrapper", { "is-reveal": onScreen })}
-            ref={ref}
-            >
+            <div className={cn("gallery-item-wrapper", { "is-reveal": onScreen })} ref={ref} >
             <div/>
             <div className='gallery-item'>
                 <div className='gallery-item-info'>

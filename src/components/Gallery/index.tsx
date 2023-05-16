@@ -22,8 +22,8 @@ export const Gallery = ({ projects }: any) => {
           trigger: ref.current,
           start: 'top top',
           pin: true,
-          scrub: 0.5,
-          snap: 1 / (sections.length - 1),
+          scrub: 2.1,
+          // snap: 1 / (sections.length - 1),
           end: () => `+=${offwidth}`
         }
       });
