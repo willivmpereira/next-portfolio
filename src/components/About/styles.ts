@@ -173,7 +173,7 @@ export const AboutUs = styled.div`
 
       .techs {
         margin-top: 1rem;
-        
+
         ul {
             padding: 0;
             display: flex;
@@ -184,8 +184,7 @@ export const AboutUs = styled.div`
                 color: #FFF;
                 padding: 0.25rem 1rem;
                 border-radius: 4px;
-                background: #2d79c7;
-                border: solid 2px #0068d2;
+                background: #202327;
             }
         }
       }
