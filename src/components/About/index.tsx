@@ -23,6 +23,8 @@ export const About = () => {
                 <li>Next.js</li>
                 <li>TypeScript</li>
                 <li>JavaScript</li>
+                <li>StyledComponents</li>
+                <li>Scss</li>
               </ul>
             </div>
           </div>

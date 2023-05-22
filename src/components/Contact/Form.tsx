@@ -40,7 +40,7 @@ export const Form = () => {
           />
         </div>
         <div className="input__group">
-          <label htmlFor="which">What would you like</label>
+          <label htmlFor="which">O que você gostaria</label>
           <select name="which" id="which">
             <option value="">Select One</option>
             <option value="">Select Two</option>

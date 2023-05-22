@@ -173,12 +173,17 @@ export const AboutUs = styled.div`
 
       .techs {
         margin-top: 1rem;
+        max-width: 664px;
+        width: 100%;
 
         ul {
             padding: 0;
             display: flex;
-            gap: 1rem;
             align-items: center;
+            justify-content: start;
+            flex-wrap: wrap;
+            gap: 1rem;
+            overflow: hidden;
 
             li {
                 color: #FFF;
